@@ -1,0 +1,23 @@
+@import 'variables';
+
+nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color: white;
+}
+ul li{
+    list-style: none;
+}
+.header-main, .nav-ul-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-ul-flex li{
+    margin-left: 1em;
+}
