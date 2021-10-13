@@ -8,8 +8,11 @@ const Header = () => {
          <Link to="/">home</Link>
          <nav>
           <ul className="nav-ul-flex">
-            <li><Link to="/favorites">favorites</Link></li>
-            <li><Link to="/about">about us</Link></li>
+            <li className="border-left"><Link to="/favorites">favorites</Link></li>
+            <li className="border-left"><Link to="/about">about us</Link></li>
+            <li className="border-left"><Link to="/account">my account</Link></li>
+            <li><Link to="/contact">contact us</Link></li>
+          
           </ul>
         </nav>
         </header>
