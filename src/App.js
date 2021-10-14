@@ -8,6 +8,9 @@ import Account from './components/Account'
 
 
 function App() {
+
+ 
+
   return (
     <div>
       
@@ -16,7 +19,6 @@ function App() {
         <Header></Header>
       </div>
       <div className="container">
-
         <Switch>
         <Route path="/" exact>
             <Home />
@@ -36,7 +38,9 @@ function App() {
         </Switch>
         </div>
 
-      </BrowserRouter>    
+      </BrowserRouter>  
+      <p>where doe</p>
+
       </div>
   );
 }
