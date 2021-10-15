@@ -5,19 +5,32 @@ import '../Sass/header.scss'
 const Header = () => {
 
   function showHam() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
+    const links = document.getElementById("myLinks");
+    const x = document.getElementById("icon-close");
+    const open = document.getElementById("icon-open");
+
+    if (links.style.display === "block") {
+      links.style.display = "none";
       x.style.display = "none";
+      open.style.display = "block";
+
+
     } else {
+      links.style.display = "block";
       x.style.display = "block";
+      open.style.display = "none";
+
     }
   }
     return (
-      <div>
+      <>
         <header className="header-main container">
          <Link to="/">home</Link>
-         <a href="javascript:void(0);" class="icon" onClick={showHam}>
+         <a href="javascript:void(0);" class="icon" id="icon-open" onClick={showHam}>
     <i class="fa fa-bars"></i>
+  </a>
+  <a href="javascript:void(0);" class="icon" id="icon-close" onClick={showHam}>
+    <i class="fas fa-times"></i>
   </a>
 
          <nav className="nav-desc">
@@ -32,13 +45,14 @@ const Header = () => {
         </header>
                 <div class="topnav">
                 <div id="myLinks">
-                  <a href="#news">News</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </div>
+                <Link to="/favorites">favorites</Link>
+            <Link to="/about">about us</Link>
+            <Link to="/account">my account</Link>
+            <Link to="/contact">contact us</Link>
+          </div>
                 
               </div>
-              </div>
+              </>
     )
 }
 
