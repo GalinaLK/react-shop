@@ -1,0 +1,11 @@
+.downloads{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.downloadLink{
+    background-color: black;
+    color: white;
+}

@@ -5,11 +5,10 @@ import Favorites from './components/Favorites'
 import Home from './components/Home'
 import ContactUs from './components/ContactUs'
 import Account from './components/Account'
+import Footer from './components/Footer'
 
 
 function App() {
-
- 
 
   return (
     <div>
@@ -39,8 +38,7 @@ function App() {
         </div>
 
       </BrowserRouter>  
-      <p>where doe</p>
-
+      <Footer/>
       </div>
   );
 }

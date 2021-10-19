@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cards = (props) => {
     const {alt, url, mobileImg} = props;
-    console.log(alt, url)
+
     return (
         <div className="card-item">  
          <picture>
