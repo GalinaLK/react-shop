@@ -1,11 +1,40 @@
+@import 'variables';
+
+.container-footer{
+    background-color: $secondary-color;
+    color: white;
+    width: 100%;
+    margin-top: 3em;
+    padding: 3em 0px;
+}
 .downloads{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .downloadLink{
     background-color: black;
     color: white;
+    padding: 1em;
+    text-align: center;
+}
+.mobileStores{
+    font-weight: bold;
+}
+.downloadLinkLabel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em;
+}
+.downloadLinkLabel label{
+    padding-bottom: 1em;
+}
+
+.downloadLink i{
+    padding-right: 0.3em;
 }

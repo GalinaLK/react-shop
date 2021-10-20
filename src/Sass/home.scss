@@ -5,15 +5,21 @@
 .card-item{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1em 0px;
     justify-content: flex-start;
  
 }
 .flex-cards-wrapper {
 height: auto;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2em;
     grid-template-columns: 1fr;
+}
+.price-card{
+    font-weight: bold;
+}
+.card-item>p{
+    margin-top: 1em;
 }
 
 @media only screen and (min-width: 400px) {

@@ -12,7 +12,7 @@ const Home = () => {
         fetch('https://jsonplaceholder.typicode.com/photos/')
         .then((response) => response.json())
         .then((json) => {
-            const cards = json.slice(0, 8);
+            const cards = json.slice(0, 6);
             setCardsData(cards);
             console.log(cards);
 

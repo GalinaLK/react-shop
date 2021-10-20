@@ -11,7 +11,7 @@ const Cards = (props) => {
            <img src={url}  alt={alt}/>
          </picture>
          <p>{alt}</p>
-         <p>$49.99</p>
+         <p className="price-card">$49.99</p>
         </div>
     )
 }
