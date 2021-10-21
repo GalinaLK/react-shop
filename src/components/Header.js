@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Sass/header.scss'
+import logo from '../photos/logo.png';
 
 const Header = () => {
 
@@ -25,7 +26,7 @@ const Header = () => {
     return (
       <>
         <header className="header-main container">
-         <Link to="/">home</Link>
+         <Link to="/"><img src={logo} alt="link home" width="60px" /></Link>
          <a href="javascript:void(0);" class="icon" id="icon-open" onClick={showHam}>
     <i class="fa fa-bars"></i>
   </a>

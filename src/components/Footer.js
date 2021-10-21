@@ -5,8 +5,7 @@ import '../Sass/footer.scss'
 const Footer = () => {
     return (
         <div className="container-footer">
-          <div className="container">
-            <div className="downloads">
+          <div className="container grid-footer">
               <div className="downloadLinkLabel">
               <label htmlFor="downloadAppStore">download the app on App store</label>
               <a id="downloadAppStore" className="downloadLink" href="#">
@@ -24,10 +23,13 @@ const Footer = () => {
                 <span className="mobileStores">Google Play</span>
               </a>    
               </div> 
-            </div>
-            <label htmlFor="findStore">store locator</label>
-            <button id="findStore">find a store</button>
-            <h6>follow us</h6>
+
+              <div className="findStoreGroup">
+                <label htmlFor="findStore">store locator</label>
+                <button id="findStore">find a store</button>
+              </div>
+            <div className="followUs">
+            <p>follow us</p>
             <ul>
                 <li><i class="fab fa-instagram"></i></li>
                 <li><i class="fab fa-youtube"></i></li>
@@ -35,6 +37,7 @@ const Footer = () => {
                 <li><i class="fab fa-facebook"></i></li>
                 <li><i class="fab fa-tiktok"></i></li>
             </ul>
+            </div>
             </div>
         </div>
     )

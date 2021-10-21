@@ -1,5 +1,8 @@
 @import 'variables';
 
+.grid-footer{
+    width: 100%;
+  }
 .container-footer{
     background-color: $secondary-color;
     color: white;
@@ -7,7 +10,7 @@
     margin-top: 3em;
     padding: 3em 0px;
 }
-.downloads{
+.downloads, .sm-findStore{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +18,7 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
 .downloadLink{
     background-color: black;
     color: white;
@@ -24,12 +28,37 @@
 .mobileStores{
     font-weight: bold;
 }
-.downloadLinkLabel {
+.downloadLinkLabel, .findStoreGroup, .followUs, .followUs ul {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     margin: 1em;
+}
+.findStoreGroup button{
+    font-size: x-large;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    background-color: $primary-color;
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: white;
+    }
+}
+.followUs ul li{
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.2);
+        color: white;
+    }
+}
+.followUs ul {
+flex-direction: row;
+font-size: 1.5rem;
+color: $primary-color;
+margin-top: 0.5em;
 }
 .downloadLinkLabel label{
     padding-bottom: 1em;
@@ -38,3 +67,16 @@
 .downloadLink i{
     padding-right: 0.3em;
 }
+
+@media only screen and (min-width: 600px) {
+   // .downloads, .sm-findStore{
+   //     flex-direction: column; 
+   //  }
+   .grid-footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   }
+       
+   
+
+  }
