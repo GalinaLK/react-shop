@@ -4,6 +4,7 @@ import '../Sass/header.scss'
 import logo from '../photos/logo.jpg';
 
 const Header = () => {
+//    "sass": "sass src/Sass:src/Css --watch --no-source-map"
 
   function showHam() {
     const links = document.getElementById("myLinks");
@@ -27,10 +28,10 @@ const Header = () => {
       <>
         <header className="header-main container">
          <Link to="/"><img src={logo} alt="link home" width="30px" /></Link>
-         <a href="javascript:void(0);" class="icon" id="icon-open" onClick={showHam}>
+         <a href="#" class="icon" id="icon-open" onClick={showHam}>
     <i class="fa fa-bars"></i>
   </a>
-  <a href="javascript:void(0);" class="icon" id="icon-close" onClick={showHam}>
+  <a href="#" class="icon" id="icon-close" onClick={showHam}>
     <i class="fas fa-times"></i>
   </a>
 
@@ -44,6 +45,7 @@ const Header = () => {
           </ul>
         </nav>
         </header>
+        
                 <div class="topnav">
                 <div id="myLinks">
                 <Link to="/favorites">favorites</Link>
