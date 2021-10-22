@@ -2,6 +2,7 @@
 
 .grid-footer{
     width: 100%;
+
   }
 .container-footer{
     background-color: $secondary-color;
@@ -9,14 +10,6 @@
     width: 100%;
     margin-top: 3em;
     padding: 3em 0px;
-}
-.downloads, .sm-findStore{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .downloadLink{
@@ -75,6 +68,8 @@ margin-top: 0.5em;
    .grid-footer{
    display: grid;
    grid-template-columns: 1fr 1fr;
+   place-items: center;
+   
    }
        
    
