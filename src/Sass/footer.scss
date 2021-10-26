@@ -21,16 +21,17 @@
 .mobileStores{
     font-weight: bold;
 }
-.downloadLinkLabel, .findStoreGroup, .followUs, .followUs ul {
+.downloadLinkLabel, .findStoreGroup, .followUs{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    margin: 1em;
+    margin: 4em;
 }
 .findStoreGroup button{
     font-size: x-large;
     padding: 0.5em 1em;
+
     margin-top: 0.5em;
     background-color: $primary-color;
 
@@ -41,17 +42,22 @@
 }
 .followUs ul li{
     cursor: pointer;
+    margin-top: 0.5em;
 
     &:hover{
         transform: scale(1.2);
         color: white;
     }
 }
+.followUs{
+    margin: 4em 0em;
+}
 .followUs ul {
+    display:flex;
 flex-direction: row;
 font-size: 1.5rem;
 color: $primary-color;
-margin-top: 0.5em;
+margin-top: 0em;
 }
 .downloadLinkLabel label{
     padding-bottom: 1em;

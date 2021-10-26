@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container-footer">
           <div className="container grid-footer">
               <div className="downloadLinkLabel">
-              <label htmlFor="downloadAppStore">download the app on App store</label>
+              <label htmlFor="downloadAppStore">download the app</label>
               <a id="downloadAppStore" className="downloadLink" href="#">
                 Available on<br/>  
                 <i class="fab fa-apple"></i>                
@@ -16,7 +16,7 @@ const Footer = () => {
               </div>
               
               <div className="downloadLinkLabel">
-              <label htmlFor="downloadGooglePlay">download the app on Google Play</label>
+              <label htmlFor="downloadGooglePlay">download the app</label>
               <a id="downloadGooglePlay" className="downloadLink" href="#">
                 Available on<br/> 
                 <i class="fab fa-google-play"></i>                
