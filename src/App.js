@@ -6,13 +6,16 @@ import Home from './components/Home'
 import ContactUs from './components/ContactUs'
 import Account from './components/Account'
 import Footer from './components/Footer'
+import { Provider } from 'react-redux';
+import shopStore from './shopStore';
 
 
 function App() {
 
   return (
-    <div>
-      
+    <Provider store={shopStore}>
+
+    <div>     
       <BrowserRouter>
       <div className="header-container sticky">
         <Header></Header>
@@ -40,6 +43,8 @@ function App() {
       </BrowserRouter>  
       <Footer/>
       </div>
+      </Provider>
+
   );
 }
 
