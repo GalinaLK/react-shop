@@ -29,11 +29,11 @@ const Header = () => {
         <header className="header-main container">
          <Link to="/"><img src={logo} alt="link home" width="30px" /></Link>
          <a href="#" class="icon" id="icon-open" onClick={showHam}>
-    <i class="fa fa-bars"></i>
-  </a>
-  <a href="#" class="icon" id="icon-close" onClick={showHam}>
-    <i class="fas fa-times"></i>
-  </a>
+           <i class="fa fa-bars"></i>
+         </a>
+         <a href="#" class="icon" id="icon-close" onClick={showHam}>
+          <i class="fas fa-times"></i>
+         </a>
 
          <nav className="nav-desc">
           <ul className="nav-ul-flex">

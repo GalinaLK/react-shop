@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={shopStore}>
 
-    <div>     
+    <>     
       <BrowserRouter>
       <div className="header-container sticky">
         <Header></Header>
@@ -42,7 +42,7 @@ function App() {
 
       </BrowserRouter>  
       <Footer/>
-      </div>
+      </>
       </Provider>
 
   );
