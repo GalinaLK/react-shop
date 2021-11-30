@@ -38,7 +38,7 @@
 
     &:hover{
         transform: scale(1.1);
-        background-color: darkblue;
+        background-color: $hover-bg;
     }
 }
 .followUs ul li{
@@ -47,14 +47,14 @@
 
     &:hover{
         transform: scale(1.2);
-        color: darkblue;
+        color: $hover-bg;
     }
 }
 .followUs{
     margin: 4em 0em;
 }
 .followUs ul {
-    display:flex;
+display:flex;
 flex-direction: row;
 font-size: 1.5rem;
 color: $secondary-color;
@@ -69,16 +69,9 @@ margin-top: 0em;
 }
 
 @media only screen and (min-width: 600px) {
-   // .downloads, .sm-findStore{
-   //     flex-direction: column; 
-   //  }
    .grid-footer{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   place-items: center;
-   
+   place-items: center;  
    }
-       
-   
-
   }
