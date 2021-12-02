@@ -1,6 +1,8 @@
 .card-item img{
-    height: 150px;
-    width: 100%;
+    aspect-ratio: auto;
+        width: 100%;
+        object-fit: contain;
+
 }
 .card-item{
     display: flex;

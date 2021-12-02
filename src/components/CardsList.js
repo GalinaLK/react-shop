@@ -10,8 +10,7 @@ const CardsList = (props) => {
         {cards.map((card) =>
           <Cards key={card.id}
                 alt={card.title}
-                url={card.url}
-                mobileImg={card.thumbnailUrl} />
+                />
                 )}
       </div>
       )
