@@ -5,7 +5,7 @@ const Cards = (props) => {
     const {alt} = props;
 
     return (
-        <div className="card-item">  
+        <section className="card-item">  
          <picture>
            <source media="(max-width: 499px)" srcset={model24}/>
            <source media="(min-width: 500px)" srcset={model24}/>
@@ -13,7 +13,7 @@ const Cards = (props) => {
          </picture>
          <p>{alt}</p>
          <p className="price-card">$49.99</p>
-        </div>
+        </section>
     )
 }
 

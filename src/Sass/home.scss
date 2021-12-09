@@ -12,7 +12,8 @@
  
 }
 .flex-cards-wrapper {
-height: auto;
+    margin-top: 15px;
+    height: auto;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr;

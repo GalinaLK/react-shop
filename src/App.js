@@ -20,7 +20,7 @@ function App() {
       <div className="header-container sticky">
         <Header></Header>
       </div>
-      <div className="container">
+      <main className="container">
         <Switch>
         <Route path="/" exact>
             <Home />
@@ -38,7 +38,7 @@ function App() {
             <Account />
           </Route>        
         </Switch>
-        </div>
+      </main>
 
       </BrowserRouter>  
       <Footer/>
