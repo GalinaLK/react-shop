@@ -5,7 +5,7 @@ import logo from '../photos/logo.jpg';
 
 const Header = () => {
 //    "sass": "sass src/Sass:src/Css --watch --no-source-map"
-
+//ta
   function showHam() {
     const links = document.getElementById("myLinks");
     const x = document.getElementById("icon-close");
