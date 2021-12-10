@@ -1,17 +1,43 @@
 @import 'variables';
 
-nav{
+.nav-desc{
+    width: 100%;
+    background-color: $secondary-color;
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    a{
+      width: 100%;
+      padding: 1em 0em;
+      text-align: center;
+    }
 }
+.logo-hamb{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a{
+    width: auto;
+    padding: 0.5em;
+  }
+}
+#nav-d{
+
+    width: 100%;
+   
+}
+
+.hidden{
+  display: none;
+}
+
 a{
     color: white;
-}
-ul li{
-    list-style: none;
-    margin-left: 1em;
+    display: block;
 }
 .header-main, .nav-ul-flex{
     display: flex;
@@ -24,69 +50,44 @@ ul li{
     margin: 0px auto;
     overflow: auto;
 }
-.nav-ul-flex li{
-    margin-left: 1em;
-    padding: 0.5em;
-    &:hover{
-      background-color: $hover-bg;
-    }
-
-}
-.nav-ul-flex li a {
-display: block;
-}
-.nav-ul-flex li{
-    margin-left: 1em;
-    border-left: 1px solid white;
-    padding-left: 0.5em;
-}
-.nav-desc{
-    display: none;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: $secondary-color;
-    position: relative;
-  }
   
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    color: white;
-    padding: 14px 30px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
+.nav-desc a.icon {
     background: black;
     display: block;
   
-  }
+}
   
-  .topnav a:hover {
+.nav-desc a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-#icon-close{
-  color: white;
-  display: none;
 }
+
 @media only screen and (min-width: 515px) {
+    .header-main{
+      padding: 0em 30px;
+    }
     .nav-desc {
-display: inline-block;  
-  }
-  .topnav, .icon{
+      width: 100%;
+      margin: 0em;
+      flex-direction: row;
+      justify-content: flex-end;
+      a{
+        padding: 1em;
+        width: auto;
+      }
+    }
+    .logo-hamb{
+      width: auto;
+      margin-right: auto;   
+    }
+    .nav-desc a.icon{
       display: none;
   }
+  #nav-d{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
+}
 

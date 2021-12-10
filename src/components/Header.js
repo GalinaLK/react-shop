@@ -1,59 +1,47 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import '../Sass/header.scss'
 import logo from '../photos/logo.jpg';
 
 const Header = () => {
 
+  const [hamClosed, setHamClosed] = useState(true);
+
   function showHam() {
-    const links = document.getElementById("myLinks");
-    const x = document.getElementById("icon-close");
-    const open = document.getElementById("icon-open");
+    const hamb = document.getElementById("hamb");
+    const links = document.getElementById("nav-d");
+    
+    links.classList.toggle("hidden");
 
-    if (links.style.display === "block") {
-      links.style.display = "none";
-      x.style.display = "none";
-      open.style.display = "block";
-
-
+    if (hamClosed) { 
+      hamb.classList.remove("fa-bars");
+      hamb.classList.add("fa-times");
+      setHamClosed(false);
     } else {
-      links.style.display = "block";
-      x.style.display = "block";
-      open.style.display = "none";
-
+      hamb.classList.remove("fa-times");
+      hamb.classList.add("fa-bars"); 
+      setHamClosed(true);
     }
   }
     return (
       <>
         <header className="header-main container">
-         <Link to="/"><img src={logo} alt="link home" width="30px" /></Link>
-         <a href="#" class="icon" id="icon-open" onClick={showHam}>
-           <i class="fa fa-bars"></i>
-         </a>
-         <a href="#" class="icon" id="icon-close" onClick={showHam}>
-          <i class="fas fa-times"></i>
-         </a>
-
-         <nav className="nav-desc">
-          <ul className="nav-ul-flex">
-            <li className="border-left"><Link to="/favorites">favorites</Link></li>
-            <li className="border-left"><Link to="/about">about us</Link></li>
-            <li className="border-left"><Link to="/account">my account</Link></li>
-            <li><Link to="/contact">contact us</Link></li>
-          
-          </ul>
-        </nav>
-        </header>
-        
-          <div class="topnav">
-              <div id="myLinks">
-               <Link to="/favorites">favorites</Link>
-               <Link to="/about">about us</Link>
-               <Link to="/account">my account</Link>
-               <Link to="/contact">contact us</Link>
+        <nav className="nav-desc">
+          <div className="logo-hamb">
+            <Link to="/"><img src={logo} alt="link home" width="30px" height="30px" /></Link>
+         
+            <a href="#" class="icon" onClick={showHam}>
+              <i class="fa fa-bars" id="hamb" ></i>
+            </a>
           </div>
-                
-      </div>
+          <div className="hidden" id="nav-d">
+            <Link to="/favorites">favorites</Link>
+            <Link to="/about">about us</Link>
+            <Link to="/account">my account</Link>
+            <Link to="/contact">contact us</Link>         
+          </div>
+          </nav>
+      </header>  
      </>
     )
 }

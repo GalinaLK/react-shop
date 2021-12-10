@@ -4,7 +4,6 @@ import Cards from './Cards'
 
 const CardsList = (props) => {
     const cards = props.cardsData;
-    console.log(cards);
     return (
       <div className="flex-cards-wrapper">
         {cards.map((card) =>
