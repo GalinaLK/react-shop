@@ -55,11 +55,11 @@
     margin: 4em 0em;
 }
 .followUs ul {
-display:flex;
-flex-direction: row;
-font-size: 1.5rem;
-color: $secondary-color;
-margin-top: 0em;
+   display:grid;
+   grid-template-columns: repeat(5, 1fr);
+   font-size: 1.5rem;
+   color: $secondary-color;
+   grid-gap: 0.5em;
 }
 .downloadLinkLabel label{
     padding-bottom: 1em;

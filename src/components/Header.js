@@ -28,7 +28,7 @@ const Header = () => {
         <header className="header-main container">
         <nav className="nav-desc">
           <div className="logo-hamb">
-            <Link to="/"><img src={logo} alt="link home" width="30px" height="30px" /></Link>
+            <Link to="/" id='logo'><img src={logo} alt="link home" width="30px" height="30px" /></Link>
          
             <a href="#" class="icon" onClick={showHam}>
               <i class="fa fa-bars" id="hamb" ></i>
