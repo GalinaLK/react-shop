@@ -52,15 +52,22 @@ a{
 }
   
 .nav-desc a.icon {
-    background: black;
     display: block;
   
 }
   
 .nav-desc a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: $hover-bg;
+    color: $hover-color;
 }
+.logo-hamb a:hover{
+  background-color: inherit;
+}
+.logo-hamb .icon:hover{
+  background-color: $hover-bg;
+  color: $hover-color;
+}
+
 
 @media only screen and (min-width: 515px) {
     .header-main{

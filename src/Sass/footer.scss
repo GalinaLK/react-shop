@@ -40,7 +40,8 @@
     &:hover{
         transform: scale(1.1);
         background-color: $hover-bg;
-    }
+        color: $hover-color;
+        }
 }
 .followUs ul li{
     cursor: pointer;
@@ -48,8 +49,8 @@
 
     &:hover{
         transform: scale(1.2);
-        color: $hover-bg;
-    }
+        color: $hover-color;
+        }
 }
 .followUs{
     margin: 4em 0em;
