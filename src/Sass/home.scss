@@ -1,8 +1,11 @@
 .card-item img{
     aspect-ratio: auto;
-        width: 100%;
-        object-fit: contain;
-
+    width: 100%;
+    object-fit: contain;
+    transition: transform 2s;
+    &:hover{
+      transform: scale(1.1);
+    }
 }
 .card-item{
     display: flex;
@@ -25,6 +28,12 @@
     margin-top: 1em;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .card img {
+      animation: none;
+    }
+}  
+
 @media only screen and (min-width: 400px) {
     .flex-cards-wrapper {
             grid-template-columns: repeat(2, 1fr);
@@ -33,7 +42,7 @@
   }
 @media only screen and (min-width: 600px) {
     .flex-cards-wrapper {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
   }
