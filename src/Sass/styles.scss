@@ -1,17 +1,12 @@
 @import 'variables';
 @import 'page-style';
 
-.header-container{
-  margin: 0px;
-  width: 100%;
-  background-color: $secondary-color;
 
-}
 .sticky {
   z-index: 100;
 
   position: sticky;
-  top: 0;
+  top: 0px;
   width: 100%
 }
 
