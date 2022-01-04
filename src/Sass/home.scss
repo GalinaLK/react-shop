@@ -1,8 +1,11 @@
+@import 'variables';
+
 .card-item img{
     aspect-ratio: auto;
     width: 100%;
     object-fit: contain;
     transition: transform 2s;
+    cursor: pointer;
     &:hover{
       transform: scale(1.1);
     }
@@ -26,6 +29,8 @@
 }
 .card-item>p{
     margin-top: 1em;
+    cursor: pointer;
+
 }
 
 @media (prefers-reduced-motion: reduce) {
