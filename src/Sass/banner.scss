@@ -1,0 +1,10 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.banner-bg{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    margin-top: 1em;
+    width: 100%;
+    background-color: scale-color($secondary-color, $lightness: 80%); 
+}

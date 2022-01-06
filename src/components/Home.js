@@ -1,5 +1,6 @@
 import React, {  Component }  from 'react'
 import CardsList from './CardsList'
+import Banner from './Banner'
 import '../Sass/home.scss'
 import { connect } from 'react-redux';
 import { fetchItems } from '../actions/itemActions';
@@ -16,6 +17,7 @@ class Home extends Component {
 
         return (
         <>
+          <Banner></Banner>
           <CardsList cardsData={cardsData}/>        
         </>
         );
