@@ -1,10 +1,13 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+$banner-color: scale-color($secondary-color, $lightness: 80%);
+
 .banner-bg{
     font-family: 'Montserrat', sans-serif;
+    color: white;
     padding: 1em;
     margin-top: 1em;
     width: 100%;
-    background-color: scale-color($secondary-color, $lightness: 80%); 
+    background-image: linear-gradient(to right, $secondary-color , $banner-color); 
 }

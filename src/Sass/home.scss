@@ -15,7 +15,10 @@
     flex-direction: column;
     padding: 1em 0px;
     justify-content: space-between;
- 
+    .photo-card{
+        overflow: hidden;
+        width: 100%;
+    }
 }
 .flex-cards-wrapper {
     margin-top: 15px;
