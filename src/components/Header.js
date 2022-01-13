@@ -24,11 +24,15 @@ const Header = () => {
     }
   }
     return (
-        <header className="header-main header-container">
+      <header className="header-main header-container">
         <nav className="nav-desc">
           <div className="logo-hamb">
-            <Link to="/" id='logo'><img src={logo} alt="link home" width="30px" height="30px" /></Link>
-         
+            <Link to="/" id='logo'>
+              <img src={logo} 
+                   alt="link home" 
+                   width="30px" 
+                   height="30px" />
+            </Link>         
             <a href="#" class="icon" onClick={showHam}>
               <i class="fa fa-bars" id="hamb" ></i>
             </a>
@@ -39,7 +43,7 @@ const Header = () => {
             <Link to="/account">my account</Link>
             <Link to="/contact">contact us</Link>         
           </div>
-          </nav>
+        </nav>
       </header>  
     )
 }
