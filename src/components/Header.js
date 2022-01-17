@@ -26,16 +26,20 @@ const Header = () => {
     return (
       <header className="header-main header-container">
         <nav className="nav-desc">
-          <div className="logo-hamb">
+          <div className="top-nav">
             <Link to="/" id='logo'>
-              <img src={logo} 
-                   alt="link home" 
-                   width="30px" 
-                   height="30px" />
-            </Link>         
-            <a href="#" class="icon" onClick={showHam}>
+            <img src={logo} 
+                alt="link home" 
+                width="30px" 
+                height="30px" />
+            </Link>      
+            <form id='search'>
+            <input type="search" name="q" placeholder="Search query"/>
+            <input type="submit" value="&#8811;"/>
+            </form>
+            <button class="icon" onClick={showHam}>
               <i class="fa fa-bars" id="hamb" ></i>
-            </a>
+            </button>
           </div>
           <div className="hidden" id="nav-d">
             <Link to="/favorites">favorites</Link>
