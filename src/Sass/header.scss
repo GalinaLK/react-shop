@@ -15,7 +15,8 @@
     justify-content: space-between;
 
     .top-nav{
-      padding: 0 30px;
+      flex: auto;
+      padding: 0px 30px;
       max-width: 1100px;
       display: flex;
       flex-direction: row;
@@ -43,9 +44,13 @@
   background-color: $secondary-color;
   color: white;
   font-size: 1.5rem;
+  border-radius: 20%;
+  cursor: pointer;
 }
 #search input[type="search"]{
   font-size: 1.5rem;
+  width: 80%;
+
 }
 .hidden{
   display: none;
@@ -69,6 +74,9 @@ a{
 .nav-desc a:hover {
     background-color: $hover-bg;
     color: $hover-color;
+}
+.nav-desc #logo:hover{
+ background-color: initial;
 }
 #search{
   margin: auto 1em;
