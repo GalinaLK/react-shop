@@ -24,7 +24,8 @@ const Header = () => {
     }
   }
     return (
-      <header className="header-main">
+      <header className="header-container sticky">
+       <div className="header-main">
         <nav className="nav-desc">
           <div className="top-nav">
             <Link to="/" id='logo'>
@@ -41,14 +42,15 @@ const Header = () => {
               <i class="fa fa-bars" id="hamb" ></i>
             </button>
           </div>
-          <div className="hidden" id="nav-d">
-            <Link to="/favorites">favorites</Link>
-            <Link to="/about">about us</Link>
-            <Link to="/account">my account</Link>
-            <Link to="/contact">contact us</Link>         
-          </div>
+          <ul className="hidden" id="nav-d">
+            <li><Link to="/favorites">favorites</Link></li>
+            <li><Link to="/about">about us</Link></li>
+            <li><Link to="/account">my account</Link></li>
+            <li><Link to="/contact">contact us</Link></li>         
+          </ul>
         </nav>
-      </header>  
+       </div>  
+     </header>
     )
 }
 

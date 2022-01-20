@@ -17,9 +17,7 @@ function App() {
 
     <>     
       <BrowserRouter>
-      <div className="header-container sticky">
         <Header></Header>
-      </div>
       <main className="container">
         <Switch>
         <Route path="/" exact>
