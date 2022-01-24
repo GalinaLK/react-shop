@@ -24,7 +24,7 @@ const Header = () => {
     }
   }
     return (
-      <header className="header-container sticky">
+      <header className="header-container">
        <div className="header-main">
         <nav className="nav-desc">
           <div className="top-nav">
