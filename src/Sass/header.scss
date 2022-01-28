@@ -1,5 +1,13 @@
 @import 'variables';
 
+.hidden{
+  display: none;
+}
+a{
+    color: white;
+    display: block;
+}
+
 .header-container{
   margin: 0px;
   width: 100%;
@@ -55,18 +63,6 @@
   font-size: 1.5rem;
   width: 80%;
 
-}
-.hidden{
-  display: none;
-}
-a{
-    color: white;
-    display: block;
-}
-.header-main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 } 
 .nav-desc a:hover {
     background-color: $hover-bg;

@@ -25,7 +25,6 @@ const Header = () => {
   }
     return (
       <header className="header-container">
-       <div className="header-main">
         <nav className="nav-desc">
           <div className="top-nav">
             <Link to="/" id='logo'>
@@ -49,7 +48,6 @@ const Header = () => {
             <li><Link to="/contact">contact us</Link></li>         
           </ul>
         </nav>
-       </div>  
      </header>
     )
 }
