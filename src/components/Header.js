@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import '../Sass/header.scss'
-import logo from '../photos/logo.avif';
+import logo from '../photos/logo.avif'
 
 const Header = () => {
 
@@ -34,8 +34,8 @@ const Header = () => {
                 height="30px" />
             </Link>      
             <form id='search'>
-            <input type="search" name="q" placeholder="Search query"/>
-            <input type="submit" value="&#8811;"/>
+             <input type="search" name="q" placeholder="Search query"/>
+             <input type="submit" value="&#8811;"/>
             </form>
             <button class="icon" onClick={showHam}>
               <i class="fa fa-bars" id="hamb" ></i>
@@ -48,7 +48,7 @@ const Header = () => {
             <li><Link to="/contact">contact us</Link></li>         
           </ul>
         </nav>
-     </header>
+      </header>
     )
 }
 

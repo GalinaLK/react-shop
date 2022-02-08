@@ -56,13 +56,11 @@ a{
   background-color: $secondary-color;
   color: white;
   font-size: 1.5rem;
-  border-radius: 20%;
   cursor: pointer;
 }
 #search input[type="search"]{
   font-size: 1.5rem;
   width: 80%;
-
 } 
 .nav-desc a:hover {
     background-color: $hover-bg;
